@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-proj",
-  "version": "1.0.2",
+  "version": "0.0.0-semantically-released",
   "author": "Paul Berg (https://paulrberg.com)",
   "config": {
     "commitizen": {
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^6.1.0",
-    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/github": "^5.2.10",
     "@semantic-release/npm": "^5.1.4",
     "@semantic-release/release-notes-generator": "^7.1.4",
     "cz-conventional-changelog": "^2.1.0",
