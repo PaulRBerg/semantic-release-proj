@@ -1,7 +1,12 @@
 {
   "name": "semantic-release-proj",
-  "version": "1.0.1",
+  "version": "0.0.0-semantically-released",
   "author": "Paul Berg (https://paulrberg.com)",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "dependencies": {
     "table": "^5.2.3"
   },
@@ -11,6 +16,7 @@
     "@semantic-release/git": "^7.0.8",
     "@semantic-release/npm": "^5.1.4",
     "@semantic-release/release-notes-generator": "^7.1.4",
+    "cz-conventional-changelog": "^2.1.0",
     "semantic-release": "^15.13.3"
   },
   "keywords": [],
@@ -21,7 +27,8 @@
     "url": "https://github.com/PaulRBerg/semantic-release-test.git"
   },
   "scripts": {
-    "doit": "node ./index.js",
+    "build": "node ./index.js",
+    "cz": "git-cz",
     "semantic-release": "semantic-release"
   }
 }
