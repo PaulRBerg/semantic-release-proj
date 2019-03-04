@@ -10,7 +10,7 @@ jobs:
           command: npm install
       - run:
           name: "Do It Bro"
-          command: "npm run doit"
+          command: "npm run build"
   release:
     docker:
       - image: circleci/node:10.15.0
