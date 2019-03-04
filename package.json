@@ -1,0 +1,27 @@
+{
+  "name": "semantic-release-proj",
+  "version": "0.0.0-development",
+  "author": "Paul Berg (https://paulrberg.com)",
+  "dependencies": {
+    "table": "^5.2.3"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/npm": "^5.1.4",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "semantic-release": "^15.13.3"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaulRBerg/semantic-release-test.git"
+  },
+  "scripts": {
+    "doit": "node ./index.js",
+    "semantic-release": "semantic-release"
+  }
+}

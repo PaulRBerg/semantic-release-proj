@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  test_node_10:
+    docker:
+      - image: circleci/node:10.15.0
+    steps:
+      - checkout
+      - run:
+          name: "Install Modules"
+          command: npm install
+      - run:
+          name: "Do It Bro"
+          command: "npm run doit"
+  release:
+    docker:
+      - image: circleci/node:10.15.0
+    steps:
+      - checkout
+      - run: npm install
+      - run: npx semantic-release
+
+workflows:
+  version: 2
+  test_and_release:
+    jobs:
+      - test_node_10.15.0
+      - release:
+          requires:
+            - test_node_10.15.0
