@@ -6,7 +6,7 @@
     "@semantic-release/npm",
     [
       "@semantic-release/git", {
-        "assets": ["docs"]
+        "assets": false
       }
     ],
     "@semantic-release/github"
